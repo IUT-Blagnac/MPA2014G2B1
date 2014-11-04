@@ -5,7 +5,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
 
 import javax.swing.*;
 
@@ -18,7 +17,6 @@ import JTables.JTableIntervenant;
 import JTables.JTableProjet;
 import JTables.JTableSujet;
 import Librairies.CsvLib;
-import Librairies.MonFiltre;
 import Panels.Database;
 import Panels.JFramePerso;
 import Panels.PanelEtudiant;

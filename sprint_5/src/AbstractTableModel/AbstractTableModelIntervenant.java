@@ -2,11 +2,11 @@ package AbstractTableModel;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+
 
 import javax.swing.table.AbstractTableModel;
 
-import Librairies.ChargerObjet;
+
 import Objets.Intervenant;
 import Panels.JFramePerso;
 
