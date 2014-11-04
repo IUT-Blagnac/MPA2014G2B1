@@ -1,0 +1,109 @@
+﻿//docTechnique.txt
+:lang: fr
+:Author:  Groupe projet 2B1
+:doctitle: Documentation Technique du Projet MPA-M3301-G2B1 (Sprint 4)
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 2.0, septembre 2014
+:toc:
+= Documentation Technique SPRINT 4
+
+include::docConf.txt[]
+
+== Généralités
+
+=== Equipe
+
+include::listeMembres.txt[]
+
+=== Formation
+
+{formation}
+
+=== Projet
+
+{nomProjet}
+
+
+== Backlog de produit du {nomProjet} et objectifs du sprint
+
+include::backlogSprint.txt[]
+
+
+== Description du modèle de données de l'application OPTI.
+
+=== Classe Librairies
+
+La classe link:Doc/Librairies/csvLib.html[CsvLib] est une librairie qui permet d'afficher le contenu d'un fichier csv , de le modifier éventuellement et de l'enregistrer dans un fichier choisi par l'utilisateur.
+
+La classe link:Doc/Librairies/MonFiltre.html[MonFiltre] permet de choisir un type de fichier en particulier (ici .csv).
+
+La classe link:Doc/Librairies/ChargerObjet.html[ChargerObjet] est la classe qui permet d'utilisation des types objets implémentés.
+
+=== Classe Graphique
+
+La classe link:Doc/InterfaceGraphique.html[InterfaceGraphique] est la classe principale qui comporte l'interface de l'application OPTI.
+
+Les classes Abstract,Panel et JTable sont des éléments qui composent le tableau des données selon leur type(Etudiant,Intervenant...):
+
+
+- Abstract: link:Doc/AbstractTableModel/AbstractTableModelEtudiant.html[AbstractTableModelEtudiant]
+- Panel: link:Doc/Panels/PanelEtudiant.html[PanelEtudiant]
+- JTable:link:Doc/JTables/JTableEtudiant.html[JTableEtudiant]
+
+
+
+=== Classes Métier
+
+Voici les classes Métier qui représentent les objets manipulés dans l'application:
+
+- link:Doc/Objets/Etudiant.html[Etudiant] est la classe qui permet de définir un objet de type Etudiant.
+- link:Doc/Objets/Intervenant.html[Intervenant] est la classe qui permet de définir un objet de type Intervenant.
+- link:Doc/Objets/Sujet.html[Sujet] est la classe qui permet de définir un objet de type Sujet.
+- link:Doc/Objets/Projet.html[Projet] est la classe qui permet de définir un objet de type Projet.
+- link:Doc/Objets/Groupe.html[Groupe] est la classe qui permet de définir un objet de type Groupe.
+- link:Doc/Objets/Voeu.html[Voeu] est la classe qui permet de définir un objet de type Voeux.
+
+
+
+=== Classe OPTI
+
+La classe link:Doc/OPTI.html[OPTI] est la classe qui permet de lancer l'interface graphique.
+
+
+
+
+
+
+== Modélisation des données
+
+=== Diagramme de classes
+
+.Diagramme de classes OPTI
+image::DiagrammedeclassesModèle.png[]
+
+
+== Plans de test
+
+=== Fonction "Afficher"
+
+- Cliquer sur le bouton 'Afficher' : un explorateur de fichiers doit apparaître.
+- Choisir un fichier .csv : la liste correspondante doit s'afficher dans l'application.
+- Il est possible de modifier une ligne du fichier csv en sélectionnant la ligne puis en cliquant sur le bouton 'modifier'.
+- Il est possible de supprimer une ligne du fichier csv en sélectionnant la ligne puis en cliquant sur le bouton 'supprimer'.
+- Il est possible d'ajouter une ligne du fichier csv en sélectionnant la ligne puis en cliquant sur le bouton 'ajouter'.
+- il est possible d'optimiser ses recherche en utilisant le filtrage.
+
+=== Fonction "Enregistrer"
+
+- Cliquer sur le bouton 'Enregistrer' : un explorateur de fichiers apparaît afin de trouver un répertoire où sauvegarder le fichier modifié. Si aucun fichier n'est ouvert, un message d'erreur apparaît.
+
+=== Fonction "A propos"
+
+- Cliquer sur le bouton 'A Propos' : une fenêtre apparaît avec les informations concernant le groupe et le sprint courant.
+
+=== Fonction "Quitter"
+
+- Cliquer sur le bouton 'Quitter' : un message de confirmation doit apparaître avant de fermer l'application.
+
+//Fin document

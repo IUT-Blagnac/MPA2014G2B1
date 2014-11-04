@@ -1,0 +1,17 @@
+﻿Liste des fonctionnalités
+
+afficher la liste des sujets puis ajouter un nouveau sujet et sauvegarder la liste des projets dans un fichier .csv de mon choix "\n"
+afficher la liste des projets puis ajouter un nouveau projet et sauvegarder la liste des projets dans un fichier .csv de mon choix
+afficher la liste des intervenants puis ajouter un nouvel intervenant et sauvegarder la liste des intervenants dans un fichier .csv de mon choix
+afficher la liste des étudiants puis ajouter un nouvel étudiant et sauvegarder la liste des étudiants dans un fichier .csv de mon choix
+Afficher la liste des étudiants ou des intervenants ou des sujets ou des projets d?un fichier .csv dans l?IHM, en supprimer certains puis l?enregistrer dans un fichier .csv de mon choix
+Affichage liste étudiants à partir du fichier etudiants2014_2015.csv
+Affichage liste sujets à partir du fichier sujets2014_2015.csv
+Affichage liste projets à partir du fichier projets2014_2015.csv
+Affichage liste intervenants à partir du fichier intervenants2014_2015.csv
+Afficher la liste des étudiants ou des intervenants ou des projets d'un fichier .csv
+Afficher la liste des étudiants, ajouter un nouvel étudiant, sauvegarder
+Afficher le liste des intervenants, ajouter un nouvel intervenant, sauvegarder.
+Afficher liste des sujets, ajouter nouveau sujet, sauvegarder.
+Afficher liste des projets, ajouter nouveau projet, sauvegarder.
+Afficher les groupes

@@ -1,0 +1,3 @@
+- Ecrire les documentations utilisateur et technique
+- Ecrire le programme makeOPTIweb qui permet de générer le HTML
+- Ecrire le programme makeOPTIwebTest qui permet de tester le programme

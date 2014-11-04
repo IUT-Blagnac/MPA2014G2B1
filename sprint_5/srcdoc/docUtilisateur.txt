@@ -1,0 +1,136 @@
+﻿//docUtilisateur.txt
+:lang: fr
+:Author:  Groupe projet 2B1
+:doctitle: Documentation Utilisateur du Projet MPA-M3301-G2B1 (Sprint 4)
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 2.0, septembre 2014
+:toc:
+
+= Documentation Utilisateur SPRINT 5
+
+include::docConf.txt[]
+
+== Généralités
+
+=== Equipe
+
+include::listeMembres.txt[]
+
+=== Formation
+
+{formation}
+
+=== Projet
+
+{nomProjet}
+
+
+== Backlog de produit du {nomProjet} et objectifs du sprint
+
+include::backlogSprint.txt[]
+
+
+== Fonctionnalités disponibles
+
+=== Comment lancer l'application?
+Allez dans le répertoire principal du projet "{nomProjet}"
+
+.Chemin principal du projet
+image::lancerApp.png[]
+
+Cliquer sur OPTI.bat afin d'exécuter l'application.
+
+
+=== Interface graphique
+
+Avant toute chose, veuillez choisir les 4 csv dans l'ordre suivant, un par un :
+	- etudiants
+	- intervenants
+	- projets
+	- sujets
+	
+.Accès au répertoire 'data'.
+IMPORTANT: Pour accéder au répertoire 'data' qui contient tous les fichiers csv, nous devons parcourir le répertoire 'Mes Documents' puis 'groupe2b1' et enfin 'Sprint 5' qui contient le répertoire 'data'.
+	
+.Choix des 4 csv 
+image::choixCSV.png[]
+	
+L'interface comporte 4 onglets :
+
+
+- l'onglet 'A Propos' qui permet de se renseigner sur les créateurs de l'interface
+
+.Fenetre 'A Propos' de l'application
+image::aPropos.png[]
+
+
+- l'onglet 'Quitter'.
+
+.Evenement du bouton 'Quitter'.
+image::boutonQuitter.png[]
+
+=== Afficher 
+
+- l'onglet 'Afficher' qui permet d'afficher la liste des étudiants, des intervenants, des sujets ou des projets.
+
+
+.Onglet Afficher
+image::ongletAfficher.png[]
+
+
+
+=== Enregistrer
+
+- l'onglet 'Enregistrer' qui permet de sauvegarder une liste, affichée sur l'interface et éventuellement modifiée, dans un fichier csv choisi par l'utilisateur.
+
+.Enregistrement de la liste des étudiants dans un fichier csv.
+image::enregistrement.png[]
+
+=== Ajouter
+
+Il est possible d'ajouter une ligne dans un fichier csv de votre choix.
+
+IMPORTANT: Vous devez commencer par afficher le fichier csv auxquel vous souhaitez ajouter une ligne.
+
+.Après l'affichage du fichier csv, choisir le bouton 'Ajouter' comme ci-dessus.
+image::ajouter.png[]
+
+.Vous devrez alors saisir la première donnée relative à la donnée en question.
+image::ajouter1.png[]
+
+.Vous devrez ensuite saisir la 2nde donnée relative à la donnée en question.
+image::ajouter2.png[]
+
+.Vous devrez ensuite saisir la dernière donnée relative à la donnée en question.
+image::ajouter3.png[]
+
+=== Supprimer
+
+Il est possible de supprimer une ligne dans un fichier csv de votre choix.
+
+IMPORTANT: Vous devez commencer par afficher le fichier csv auxquel vous souhaitez supprimer une ligne.
+
+.Apres avoir séléctionné la ligne à supprimer, choisir le bouton 'Supprimer' comme ci-dessus.
+image::supprimer.png[]
+
+=== Modifier
+Il est possible de modifier une ligne dans un fichier csv de votre choix.
+
+IMPORTANT: Vous devez commencer par afficher le fichier csv auxquel vous souhaitez modifier une ligne.
+
+.Apres avoir séléctionner la ligne à modifier, choisir le bouton 'Modifier' comme ci-dessus.
+image::modifier.png[]
+
+Vous devrez alors saisir les informations relatives à la donnée en question, comme pour la fonction 'Ajouter'.
+
+=== Filtrer
+
+Il est possible de filtrer les lignes d'un fichier csv de votre choix.
+
+IMPORTANT: Vous devez commencer par afficher le fichier csv à filtrer.
+
+.Après avoir choisi quel type d'information à filtrer, vous devez saisir le/les caractère(s) que vous souhaitez rechercher parmis les données.
+image::filtrer.png[]
+
+//Fin document
