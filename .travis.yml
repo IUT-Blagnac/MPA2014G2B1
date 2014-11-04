@@ -45,7 +45,6 @@ script:
   - javac -cp .:./bin -d ./bin ./src/Panels/PanelGroupe.java
   - javac -cp .:./bin -d ./bin ./src/Panels/JFramePerso.java
   - javac -cp .:./bin -d ./bin ./src/Panels/JButtonPerso.java
-  - javac -cp .:./bin -d ./bin ./src/Panels/Database.java
   - javac -cp .:./bon -d ./bin ./src/InterfaceGraphique.java
   - javac -cp .:./bon -d ./bin ./src/OPTI.java
   - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/TestChargerObjet.java
