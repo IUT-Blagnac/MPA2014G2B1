@@ -20,12 +20,28 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -cp .:./bin -d ./bin ./src/*.java
-  - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/*.java
-  - javac -cp .:./bin -d ./bin ./src/JTables/*.java
-  - javac -cp .:./bin -d ./bin ./src/Libraries/*.java
-  - javac -cp .:./bin -d ./bin ./src/Objets/*.java
-  - javac -cp .:./bin -d ./bin ./src/Panels/*.java
+  - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
+  - javac -cp .:./bin -d ./bin ./src/Librairies/MonFiltre.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Etudiant.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Intervenant.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Projet.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Sujet.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Groupe.java
+  - javac -cp .:./bin -d ./bin ./src/Librairies/ChargerObjet.java
+  - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelEtudiant.java
+  - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelIntervenant.java
+  - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelProjet.java
+  - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelSujet.java
+  - javac -cp .:./bin -d ./bin ./src/JTables/JTableEtudiant.java
+  - javac -cp .:./bin -d ./bin ./src/JTables/JTableIntervenant.java
+  - javac -cp .:./bin -d ./bin ./src/JTables/JTableProjet.java
+  - javac -cp .:./bin -d ./bin ./src/JTables/JTableSujet.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/PanelEtudiant.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/PanelIntervenant.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/PanelProjet.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/PanelSujet.java
+  - javac -cp .:./bon -d ./bin ./src/InterfaceGraphique.java
+  - javac -cp .:./bon -d ./bin ./src/OPTI.java
   - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/*.java
   - java -jar ../plantuml.jar -Tpng -o srcdoc/images srcdoc/diag0.puml
   - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
