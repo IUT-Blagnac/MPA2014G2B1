@@ -20,8 +20,8 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
   - javac -cp .:./bin -d ./bin ./src/Librairies/MonFiltre.java
+  - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Etudiant.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Intervenant.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Projet.java
