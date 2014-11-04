@@ -23,10 +23,10 @@ script:
   - javac -cp .:./bin -d ./bin ./src/Librairies/MonFiltre.java
   - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Etudiant.java
-  - javac -cp .:./bin -d ./bin ./src/Objets/Intervenant.java
-  - javac -cp .:./bin -d ./bin ./src/Objets/Projet.java
-  - javac -cp .:./bin -d ./bin ./src/Objets/Sujet.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Groupe.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Sujet.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Projet.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Intervenant.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Voeu.java
   - javac -cp .:./bin -d ./bin ./src/Panels/Database.java
   - javac -cp .:./bin -d ./bin ./src/Librairies/ChargerObjet.java
