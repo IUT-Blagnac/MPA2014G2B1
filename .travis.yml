@@ -20,13 +20,14 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
   - javac -cp .:./bin -d ./bin ./src/Librairies/MonFiltre.java
+  - javac -cp .:./bin -d ./bin ./src/Librairies/CsvLib.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Etudiant.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Intervenant.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Projet.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Sujet.java
   - javac -cp .:./bin -d ./bin ./src/Objets/Groupe.java
+  - javac -cp .:./bin -d ./bin ./src/Objets/Voeu.java
   - javac -cp .:./bin -d ./bin ./src/Librairies/ChargerObjet.java
   - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelEtudiant.java
   - javac -cp .:./bin -d ./bin ./src/AbstractTableModel/AbstractTableModelIntervenant.java
@@ -40,9 +41,15 @@ script:
   - javac -cp .:./bin -d ./bin ./src/Panels/PanelIntervenant.java
   - javac -cp .:./bin -d ./bin ./src/Panels/PanelProjet.java
   - javac -cp .:./bin -d ./bin ./src/Panels/PanelSujet.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/PanelGroupe.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/JFramePerso.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/JButtonPerso.java
+  - javac -cp .:./bin -d ./bin ./src/Panels/Database.java
   - javac -cp .:./bon -d ./bin ./src/InterfaceGraphique.java
   - javac -cp .:./bon -d ./bin ./src/OPTI.java
-  - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/*.java
+  - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/TestChargerObjet.java
+  - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/TestcsvLib.java
+  - javac -cp .:./bin:../junit.jar -d ./bin ./src/Tests/TestObjet.java
   - java -jar ../plantuml.jar -Tpng -o srcdoc/images srcdoc/diag0.puml
   - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
   - ls -alF srcdoc
